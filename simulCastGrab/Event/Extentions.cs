@@ -1,6 +1,6 @@
-﻿using simulCastGrab.Event.Interfaces;
-using static simulCastGrab.Event.EventHook;
-namespace simulCastGrab.Event
+﻿using simulCastGrab.Events.Interfaces;
+using static simulCastGrab.Events.EventHook;
+namespace simulCastGrab.Events
 {
     /// <summary>
     /// Safe <see cref="CEvent"/> Invocation.

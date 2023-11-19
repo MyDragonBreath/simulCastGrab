@@ -1,5 +1,5 @@
 ﻿using simulCastGrab;
-using simulCastGrab.Event.Arguments;
+using simulCastGrab.Events.Arguments;
 
 namespace SimulCastSample
 {

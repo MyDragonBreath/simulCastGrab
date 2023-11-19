@@ -1,9 +1,9 @@
-﻿using simulCastGrab.Event;
-using simulCastGrab.Event.Arguments;
+﻿using simulCastGrab.Events;
+using simulCastGrab.Events.Arguments;
 using simulCastGrab.Helpers;
 using simulCastGrab.Services;
 using System.Globalization;
-using static simulCastGrab.Event.EventHook;
+using static simulCastGrab.Events.EventHook;
 
 namespace simulCastGrab
 {

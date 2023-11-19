@@ -31,7 +31,10 @@ namespace simulCastGrab.Services
         }
 
         /// <inheritdoc/>
-        public override Platforms platformE { get { return Platforms.Youtube; } }
+        public override Platforms platformE
+        {
+            get { return Platforms.Youtube; }
+        }
 
         /// <summary>
         /// Gets or sets a value indicating whether a connection to the api can be made.
@@ -80,6 +83,7 @@ namespace simulCastGrab.Services
             {
                 while ((DateTimeOffset.UtcNow - delayCheck).TotalMilliseconds < PullDelay) await Task.Delay(PullDelay);
                 if (!IsConnected) break;
+                Console.WriteLine("pol");
                 delayCheck = await RequestLiveChat() ?? DateTimeOffset.UtcNow;
             }
         }
@@ -95,7 +99,7 @@ namespace simulCastGrab.Services
             client.DefaultRequestHeaders.Add("User-Agent", "SimulCastGrab");
             var stream = await client.GetStreamAsync(liveChatUrl);
             var response = await JsonSerializer.DeserializeAsync<LiveChatResponse>(stream);
-            if (response == null) return null;
+            if (response == null) return DateTimeOffset.MaxValue;
             client.Dispose();
 
             var diff = 0;

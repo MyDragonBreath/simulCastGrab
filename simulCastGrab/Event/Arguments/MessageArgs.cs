@@ -1,7 +1,7 @@
-﻿using simulCastGrab.Event.Interfaces;
+﻿using simulCastGrab.Events.Interfaces;
 using simulCastGrab.Services;
 
-namespace simulCastGrab.Event.Arguments
+namespace simulCastGrab.Events.Arguments
 {
     /// <summary>
     /// Argument for a basic message event.

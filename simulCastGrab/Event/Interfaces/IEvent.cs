@@ -1,6 +1,6 @@
 ﻿using simulCastGrab.Services;
 
-namespace simulCastGrab.Event.Interfaces
+namespace simulCastGrab.Events.Interfaces
 {
     /// <summary>
     /// Interface for all other event argument reference types.

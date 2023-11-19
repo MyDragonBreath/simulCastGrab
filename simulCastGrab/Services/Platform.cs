@@ -1,6 +1,6 @@
-﻿using simulCastGrab.Event;
-using simulCastGrab.Event.Arguments;
-using static simulCastGrab.Event.EventHook;
+﻿using simulCastGrab.Events;
+using simulCastGrab.Events.Arguments;
+using static simulCastGrab.Events.EventHook;
 
 namespace simulCastGrab.Services
 {

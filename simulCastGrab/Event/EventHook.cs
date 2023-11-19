@@ -1,6 +1,6 @@
-﻿using simulCastGrab.Event.Interfaces;
+﻿using simulCastGrab.Events.Interfaces;
 
-namespace simulCastGrab.Event
+namespace simulCastGrab.Events
 {
     /// <summary>
     /// <see cref="EventHook"/> Class reference.
@@ -23,7 +23,8 @@ namespace simulCastGrab.Event
     /// <summary>
     /// An Exception for the failed execution of an event.
     /// </summary>
-    public class CouldNotExecuteEventException : Exception {
+    public class CouldNotExecuteEventException : Exception
+    {
         /// <summary>
         /// Initializes a new instance of the <see cref="CouldNotExecuteEventException"/> class.
         /// </summary>

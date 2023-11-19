@@ -39,7 +39,10 @@ namespace simulCastGrab.Services
         }
 
         /// <inheritdoc/>
-        public override Platforms platformE { get { return Platforms.Twitch; } }
+        public override Platforms platformE
+        {
+            get { return Platforms.Twitch; }
+        }
 
         /// <summary>
         /// Disconnects the service.
