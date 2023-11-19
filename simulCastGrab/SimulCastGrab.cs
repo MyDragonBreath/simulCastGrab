@@ -163,7 +163,7 @@ namespace simulCastGrab
         public TwitchAuthentication(string username, string auth)
         {
             Username = username;
-            Auth = auth.Trim().ToLower(new CultureInfo("en-US", false));
+            Auth = auth.Trim().ToLower(new CultureInfo("en-US"));
             if (!Auth.StartsWith("oauth:", StringComparison.OrdinalIgnoreCase)) Auth = "oauth:" + Auth;
         }
     }

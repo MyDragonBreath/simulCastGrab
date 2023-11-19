@@ -4,14 +4,17 @@
     <Description>Simultaneous Twitch and Youtube Casting Integration</Description>
     <Authors>MyDragonBreath</Authors>
 
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>0.0.1</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
+    <PackageTags>communication;irc;networking;ctcp</PackageTags>
     <RepositoryUrl>https://github.com/MyDragonBreath/simulCastGrab</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageId>DragonBreath.SimulCastGrab</PackageId>
+    <PackageReleaseNotes>https://github.com/MyDragonBreath/simulCastGrab/releases/tag/0.0.1</PackageReleaseNotes>
     
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -19,7 +22,8 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net462;netstandard2.0</TargetFrameworks>
+    
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -34,6 +38,7 @@
   <ItemGroup>
     <PackageReference Include="IrcDotNet" Version="0.7.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)\stylecop.json" Link="stylecop.json" Visible="false" />
 
     <None Include="..\readme.md" Pack="true" PackagePath="\"/>
