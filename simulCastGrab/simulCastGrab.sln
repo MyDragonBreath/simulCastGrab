@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "simulCastGrab", "simulCastGrab.csproj", "{18E6B0A0-1B69-4C59-9158-97BC425178BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simulSample", "..\simulSample\simulSample.csproj", "{766516EF-078D-479C-9ABE-725F1B4AC0EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18E6B0A0-1B69-4C59-9158-97BC425178BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E6B0A0-1B69-4C59-9158-97BC425178BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E6B0A0-1B69-4C59-9158-97BC425178BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E6B0A0-1B69-4C59-9158-97BC425178BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766516EF-078D-479C-9ABE-725F1B4AC0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766516EF-078D-479C-9ABE-725F1B4AC0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766516EF-078D-479C-9ABE-725F1B4AC0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766516EF-078D-479C-9ABE-725F1B4AC0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54E4A3EF-0D83-44DB-AAB2-B209C29EC6BE}
+	EndGlobalSection
+EndGlobal
