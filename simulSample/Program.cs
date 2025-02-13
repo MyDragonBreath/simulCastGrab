@@ -4,7 +4,7 @@ using simulCastGrab.Events.Arguments;
 namespace SimulCastSample
 {
     public class Program
-    {
+    { 
         public static void Main(string[] args)
         {
             var twitchauth = new TwitchAuthentication("YOUR USERNAME", "YOUR AUTH TOKEN");

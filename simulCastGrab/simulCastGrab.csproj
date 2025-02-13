@@ -4,7 +4,7 @@
     <Description>Simultaneous Twitch and Youtube Casting Integration</Description>
     <Authors>MyDragonBreath</Authors>
 
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     
     <PackageReadmeFile>readme.md</PackageReadmeFile>
@@ -21,8 +21,8 @@
 
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
-    
-    <TargetFrameworks>net6.0;net462;netstandard2.0</TargetFrameworks>
+
+    <TargetFrameworks>net8.0;netstandard2.1;</TargetFrameworks>
     
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -36,12 +36,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.37">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    
     <PackageReference Include="IrcDotNet" Version="0.7.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all" />
-    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.*" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.*" />
+    
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)\stylecop.json" Link="stylecop.json" Visible="false" />
 
-    <None Include="..\readme.md" Pack="true" PackagePath="\"/>
+    <None Include="..\readme.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   
   <PropertyGroup>
