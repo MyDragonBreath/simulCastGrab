@@ -3,10 +3,40 @@
 
     <Target Name="ILRepacker" AfterTargets="Build">
         <ItemGroup>
-            <InputAssemblies Include="$(TargetPath)"/>
-            <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'IrcDotNet'" />
-            <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'Microsoft.Bcl.AsyncInterfaces'" />
-            <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Text.Json'" />
+          <InputAssemblies Include="$(TargetPath)"/>
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'IrcDotNet'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'Microsoft.Bcl.AsyncInterfaces'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Runtime' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Text.Json'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Collections' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.ObjectModel' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.IO' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Memory' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Text.Encoding' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Threading.Tasks.Extensions' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Buffers' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Diagnostics.Debug' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Diagnostics.Tools' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Globalization' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Linq' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Net.NameResolution' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Net.Primitives' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Net.Requests' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Net.Security' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Net.Sockets' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Numerics.Vectors' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Reflection' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Reflection.Extensions' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Resources.ResourceManager' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Runtime.CompilerServices.Unsafe' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Runtime.Extensions' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Runtime.InteropServices' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Security.Cryptography.X509Certificates' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Text.Encodings.Web' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Text.RegularExpressions' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Threading' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Threading.Tasks' And '$(TargetFramework)'!='net8.0'" />
+          <InputAssemblies Include="@(ReferencePathWithRefAssemblies)" Condition="'%(filename)' == 'System.Threading.Timer' And '$(TargetFramework)'!='net8.0'" />
         </ItemGroup>
 
         <ILRepack
